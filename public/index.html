@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HealthInfo Finder</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <a class="logo" href="index.html">HealthInfo Finder</a>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="help.html">Help</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <p class="tag">Trusted Health Search</p>
+      <h1>Search Reliable Health Topics</h1>
+      <p>
+        Find basic health information using trusted MedlinePlus data
+        instead of random internet sources.
+      </p>
+
+      <form id="searchForm" class="search-box">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search a symptom or topic..."
+        />
+        <button type="submit">Search</button>
+      </form>
+    </section>
+
+    <section class="two-columns">
+      <div class="card">
+        <h2>Search Results</h2>
+        <div id="results">
+          <p>No search yet.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Recent Searches</h2>
+        <div id="historyList"></div>
+        <canvas id="historyChart"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

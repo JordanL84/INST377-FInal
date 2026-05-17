@@ -1,29 +1,19 @@
 {
-  "name": "inst377-week13-sampleapp-fa26",
+  "name": "healthinfo-finder",
   "version": "1.0.0",
-  "description": "INST377 - Week 13 Sample App",
-  "homepage": "https://github.com/anmoldash98/inst377-week13-sampleapp-fa26#readme",
-  "bugs": {
-    "url": "https://github.com/anmoldash98/inst377-week13-sampleapp-fa26/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/anmoldash98/inst377-week13-sampleapp-fa26.git"
-  },
-  "license": "ISC",
-  "author": "Anmol Dash",
+  "description": "Simple INST377 final project using Node, Supabase, and MedlinePlus",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
     "start": "nodemon -e '*'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon -e '*'",
+    "test": "echo \"No automated tests written yet. Test manually by running npm start and using the site.\""
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.104.1",
     "body-parser": "^2.2.2",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
-    "nodemon": "^3.1.14",
-    "usa-state-validator": "^1.0.6"
+    "nodemon": "^3.1.14"
   }
 }
