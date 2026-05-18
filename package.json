@@ -1,13 +1,22 @@
 {
-  "name": "healthinfo-finder",
+  "name": "healthinfofinder",
   "version": "1.0.0",
-  "description": "Simple INST377 final project using Node, Supabase, and MedlinePlus",
+  "description": "HealthInfo Finder is a web app that lets users search reliable health topics using MedlinePlus and saves recent searches with Supabase.",
+  "homepage": "https://github.com/JordanL84/INST377-FInal#readme",
+  "bugs": {
+    "url": "https://github.com/JordanL84/INST377-FInal/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JordanL84/INST377-FInal.git"
+  },
+  "license": "ISC",
+  "author": "Jordan Lin",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
     "start": "nodemon -e '*'",
-    "dev": "nodemon -e '*'",
-    "test": "echo \"No automated tests written yet. Test manually by running npm start and using the site.\""
+    "test": "echo \"No automated tests are currently written.\""
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.104.1",
